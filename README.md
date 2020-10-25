@@ -1,5 +1,16 @@
 # Frontend Mentor - FAQ Accordion Card
 
+##My solution (https://faqaccordion.netlify.app/)
+
+### 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [HTML]
+- [CSS]
+- [Javascript]
+
+
 ![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
