@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(240, 6%, 50%)
+}
+
+.card {
+    width: 85%;
+    padding: 1rem;
+    background: #ffffff  no-repeat  center top;
+    border-radius: 20px;
+    margin: 120px auto;
+}
+
+.imgtop {
+    position: relative;
+    top: -105px;
+}
+
+h1 {
+    color: hsl(238, 29%, 16%);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+hr {
+    margin-top: .7rem;
+}
+
+dt {
+    margin: .7rem auto;
+    
+}
+
+dt:after {
+    content: url(./images/icon-arrow-down.svg);
+    margin-left: .7rem;
+}
+
+.attribution {
+    text-align: center;
+    color: hsl(273, 75%, 66%);
+    font-weight: bold;
+    
+}
+
+a:link 
+{ 
+ text-decoration:none; 
+ color: black;
+}
+
+/* desktop and tablet styles */
+@media (min-width: 768px) {
+ 
+    .faq {
+        background: url(./images/bg-pattern-desktop.svg) no-repeat;
+        display: flex;
+    }
+
+    .card {
+        display: flex;
+        
+    }
+
+    .context {
+        max-width: 350px;
+        margin-left: 10rem;
+      
+    }
+
+    .imgtop{
+        width: 50%;
+        margin-left: -100px;
+        display: flex;
+        overflow: hidden;
+        top: 30px;
+    }
+}
+
+.js-accordion dd {
+    display: none;
+}
+
+.js-accordion dd.ativo {
+    display: block;
+    animation: slideDown .5s forwards;
+}
+
+.js-accordion dt.ativo {
+    color: hsl(237, 12%, 33%);
+}
+
+.js-accordion dt.ativo::after {
+    transform: rotateY(180deg);
+    transform: rotate(45deg);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        max-height: 100px;
+        opacity: 1;
+    }
+
+}
